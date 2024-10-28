@@ -2,20 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.132);
+}
+
+.container {
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.input-field,
+.select-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus,
+.select-field:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.completion-message {
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+  background-color: #ecf9f1;
+  text-align: center;
+}
+
+.completion-message h2 {
+  color: #27ae60;
+}
+
+.completion-message p {
+  font-size: 18px;
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  background-color: #1e8449;
 }
