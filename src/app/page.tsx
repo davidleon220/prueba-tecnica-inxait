@@ -41,7 +41,7 @@ export default function Home() {
   <h1>Registro para el Sorteo</h1>
   {!codigo ? (
     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-      {({ errors, touched }) => (
+      {() => (
         <Form>
           <div className="form-group">
             <label>Nombre</label>
