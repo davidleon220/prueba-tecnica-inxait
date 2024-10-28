@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
-import Link from "next/link"
 
 export default function Home() {
   const [codigo, setCodigo] = useState("");
@@ -93,7 +92,6 @@ export default function Home() {
     <div className="completion-message">
       <h2>Registro completado</h2>
       <p>Su código de participación es: {codigo}</p>
-      <Link href="./" className="back-link">Volver</Link>
     </div>
   )}
 </div>
